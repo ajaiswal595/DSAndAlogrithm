@@ -21,13 +21,26 @@ public class TestStack {
 		stack.*/
 		
 		
-		Queue<String> queue= new Queue();
+/*		Queue<String> queue= new Queue();
 		queue.enqueue("Ajay");
 		queue.enqueue("Rahul");
 		queue.enqueue("Gopal");
 		
 		System.out.println(queue.size());
+		System.out.println(queue.dequeue());
+		//System.out.println(queue.dequeue());
+		
 		System.out.println(queue);
+		System.out.println(queue.contains("Gopal"));
+	*/	
+		
+		LinkedList<Integer> list=new LinkedList<Integer>();
+		list.addFirst(5);
+		list.addFirst(4);
+		list.addFirst(3);
+		list.addFirst(2);
+		list.addFirst(1);
+		list.traverse();
 	}
 
 }

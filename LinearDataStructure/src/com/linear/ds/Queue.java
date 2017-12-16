@@ -36,8 +36,21 @@ public class Queue<X> {
 			end=-1;
 			throw new IllegalStateException("There is no item remain in queue");
 		}else {
-			return data[front++];
+			return data[++front];
 		}
+	}
+	
+	public boolean contains(X input) {
+		boolean flag=false;
+		
+		for(int i=front;i<=end;i++) {
+			if(data[i].equals(input)) {
+				flag=true;
+				break;
+			}
+		}
+		return flag;
+		
 	}
 	
 	public String toString() {
