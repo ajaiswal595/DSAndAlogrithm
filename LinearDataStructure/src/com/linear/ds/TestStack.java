@@ -34,13 +34,43 @@ public class TestStack {
 		System.out.println(queue.contains("Gopal"));
 	*/	
 		
-		LinkedList<Integer> list=new LinkedList<Integer>();
+/*		LinkedList<Integer> list=new LinkedList<Integer>();
 		list.addFirst(5);
 		list.addFirst(4);
 		list.addFirst(3);
 		list.addFirst(2);
 		list.addFirst(1);
 		list.traverse();
+		
+		*/
+		
+	CustomMap<String, String> map = new CustomMap<String, String>(10);
+		
+		map.put("0126ca121001", "Ajay");
+		map.put("0126ca121002", "Aakash");
+		map.put("0126ca121003", "Prashant");
+		
+	/*	int ajay="0126ca121001".hashCode()%10;
+		int akash="0126ca121002".hashCode()%10;
+		int prashant="0126ca121003".hashCode()%10;
+
+		
+		System.out.println(ajay);
+		System.out.println(akash);
+		System.out.println(prashant);*/
+		
+		
+		System.out.println(map.get("0126ca121001"));
+		System.out.println(map.get("0126ca121002"));
+		System.out.println(map.get("0126ca121003"));
+		
+		map.put("0126ca121001", "Kumar");
+		System.out.println(map.delete("0126ca121001").value);
+		System.out.println(map.delete("0126ca121001"));
+		
+		System.out.println(map.get("0126ca121001"));
+		System.out.println(map.get("0126ca121002"));
+		System.out.println(map.get("0126ca121003"));
 	}
 
 }
