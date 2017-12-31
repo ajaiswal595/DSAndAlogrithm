@@ -5,7 +5,7 @@ import java.util.ArrayList;
 class HashNode<K, V> {
 	K key;
 	V value;
-	HashNode<K, V> next;
+	HashNode<K, V> next=null;
 
 	public HashNode(K key, V value) {
 		super();
@@ -130,7 +130,7 @@ public class CustomMap<K, V> {
 			return null;
 		}else {
 			
-			if(head.key.equals(key) && head.next==null) {
+			if(head.key.equals(key)) {
 				bucketArray.set(index, null);
 				size--;
 				return head;

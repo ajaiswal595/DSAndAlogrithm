@@ -68,6 +68,7 @@ public class TestStack {
 		System.out.println(map.delete("0126ca121001").value);
 		System.out.println(map.delete("0126ca121001"));
 		
+		map.put("0126ca121001", "www");
 		System.out.println(map.get("0126ca121001"));
 		System.out.println(map.get("0126ca121002"));
 		System.out.println(map.get("0126ca121003"));
