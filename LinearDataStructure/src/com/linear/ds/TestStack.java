@@ -49,6 +49,9 @@ public class TestStack {
 		map.put("0126ca121001", "Ajay");
 		map.put("0126ca121002", "Aakash");
 		map.put("0126ca121003", "Prashant");
+		System.out.println(map.delete("0126ca121001"));
+		
+		
 		
 	/*	int ajay="0126ca121001".hashCode()%10;
 		int akash="0126ca121002".hashCode()%10;
