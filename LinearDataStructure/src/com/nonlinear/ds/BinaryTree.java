@@ -28,8 +28,23 @@ public class BinaryTree<X extends Comparable<X>> {
 
 	private void insert(Node parent, Node child) {
 
-		if (parent.getItem().compareTo(child.getItem()) > 0) {
-
+		if (parent.getItem().compareTo(child.getItem()) < 0) {
+			// left
+			if (parent.getLeft() == null) {
+				parent.setLeft(child);
+				child.setParent(parent);
+				this.size++;
+			} else {
+				insert(parent.getLeft(), child);
+			}
+		} else if (parent.getItem().compareTo(child.getItem()) > 0) {
+			if (parent.getRight() == null) {
+				parent.setRight(child);
+				child.setParent(parent);
+				this.size++;
+			} else {
+				insert(parent.getRight(), child);
+			}
 		}
 
 	}
