@@ -1,8 +1,10 @@
-package com.linear.ds;
+package com.ds.test;
 
+import com.linear.ds.CustomMap;
+import com.linear.ds.Stack;
 import com.nonlinear.ds.Graph;
 
-public class TestStack {
+public class TestDS {
 
 	public static void main(String[] args) {
 		Stack<String> stringStack = new Stack();
